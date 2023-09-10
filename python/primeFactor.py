@@ -6,11 +6,11 @@ def factor(a):
         i=i+1
     return i
 # print(factor(1))
-def binToDec(n):
+def primeFactor(n):
     if(n==1):
         return
     f=factor(n)
     print(f,end=" ")
-    binToDec(n/f)
-binToDec(77)
+    primeFactor(n/f)
+primeFactor(77)
 print()
